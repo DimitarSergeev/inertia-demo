@@ -1,4 +1,4 @@
-import { useForm } from "@inertiajs/react";
+import { Head, useForm } from "@inertiajs/react";
 export default function CreatePost() {
 
     const { data, setData, post, processing, errors } = useForm({
@@ -17,6 +17,15 @@ export default function CreatePost() {
         post('/create/post');
     }
     return (
+        <>
+            <Head>
+                <title>Create Posts</title>
+                <meta
+                    head-key="description"
+                    name="description"
+                    content="my awesome site is with ssr"
+                />
+            </Head>
         <div>
             <h1>Create Post</h1>
             <div className="container">
@@ -50,5 +59,6 @@ export default function CreatePost() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

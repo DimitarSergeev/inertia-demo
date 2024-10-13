@@ -1,7 +1,7 @@
 import './bootstrap';
 import '../css/app.css';
 import { createInertiaApp } from "@inertiajs/react";
-import { createRoot } from "react-dom/client";
+import { hydrateRoot } from "react-dom/client";
 import Layout from './Layouts/Layout';
 
 import "react-toastify/dist/ReactToastify.css";
@@ -18,7 +18,7 @@ createInertiaApp({
         return page;
     },
     setup({ el, App, props }) {
-        createRoot(el).render(
+        hydrateRoot(el,
             <>
                 <App {...props} /> {/* Your Inertia app */}
                 <ToastContainer /> {/* Toast container for notifications */}
