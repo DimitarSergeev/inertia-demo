@@ -10,7 +10,7 @@ export default function Layout({ children }) {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/create">Create</Link>
+                        <Link href="/create/post">Create</Link>
                     </li>
                     <li>
                         <Link href="/edit/1">Edit</Link>
@@ -19,9 +19,9 @@ export default function Layout({ children }) {
             </nav>
 
             <main>{children}</main>
-            <footer>
+            {/* <footer>
                 <h1>Footer</h1>
-            </footer>
+            </footer> */}
         </>
     );
 }

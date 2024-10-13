@@ -16,6 +16,7 @@
     "dependencies": {
         "@inertiajs/react": "^1.2.0",
         "boostrap": "^2.0.0",
-        "bootstrap": "^5.3.3"
+        "bootstrap": "^5.3.3",
+        "react-toastify": "^10.0.6"
     }
 }
