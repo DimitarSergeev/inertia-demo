@@ -10,4 +10,7 @@ export default defineConfig({
         }),
         react(),
     ],
+    ssr: {
+        noExternal: ["@inertiajs/react"], // Prevent @inertiajs/react from being treated as external
+    },
 });
